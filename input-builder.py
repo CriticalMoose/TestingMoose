@@ -137,10 +137,17 @@ base = '''[GlobalParams]
     f_name = f_loc_cr
     args = 'cr ni'
     constant_names = 'f0 A1 A2 A3 A4 A5
-                      B1 B2 B3 B4 B5 eV_J d'
-    constant_expressions = '-2.86345e+04 -8.67731e+03 4.21658e+04 -1.94200e+04 -2.15000e+05 3.43506e+05
-                             2.27746e+05 -2.10225e+06 9.21940e+06 -1.91220e+07  1.51000e+07 6.24150934e+18 1e-27'
-    function = 'd*(f0 + A1*ni + A2*ni^2 + A3*ni^3 + A4*ni^4 + A5*ni^5 + B1*cr + B2*cr^2 + B3*cr^3 + B4*cr^4 + B5*cr^5)'
+                         B1 B2 B3 B4 B5
+                         C1 C2 C3 C4
+                         D1 D2 D3 D4
+                         E1 E2 E3 E4
+                         F1 F2 F3 F4
+                         eV_J d'
+    constant_expressions = '-2.83880e+04 -8.41700e+03  3.94880e+04 -2.57680e+04 -2.18875e+05  3.40064e+05 2.27150e+05
+                            -2.10367e+06  9.21503e+06 -1.91016e+07  1.50997e+07 -2.93900e+03  1.62750e+04 1.39360e+04
+                             1.39230e+04  1.02000e+03  1.36120e+04  1.21040e+04  1.37500e+04 -2.04700e+03 1.04580e+04
+                             1.11170e+04  9.12300e+03 -1.17870e+04  7.71300e+03  7.12800e+03  2.79000e+02 6.24150934e+18 1e-27'
+    function = 'd*eV_J*(f0 + A1*ni + A2*ni^2 + A3*ni^3 + A4*ni^4 + A5*ni^5 + B1*cr + B2*cr^2 + B3*cr^3 + B4*cr^4 + B5*cr^5 +  C1*cr*ni + C2*cr^2*ni + C3*cr^3*ni + C4*cr^4*ni + D1*cr*ni^2 + D2*cr^2*ni^2 + D3*cr^3*ni^2 + D4*cr^4*ni^2 + E1*cr*ni^3 + E2*cr^2*ni^3 + E3*cr^3*ni^3 + E4*cr^4*ni^3 + F1*cr*ni^4 + F2*cr^2*ni^4 + F3*cr^3*ni^4 + F4*cr^4*ni^4)'
     derivative_order = 2
   [../]
   [./local_energy_ni]
@@ -148,10 +155,17 @@ base = '''[GlobalParams]
     f_name = f_loc_ni
     args = 'cr ni'
     constant_names = 'f0 A1 A2 A3 A4 A5
-                      B1 B2 B3 B4 B5 eV_J d'
-    constant_expressions = '-3.51973e+04 2.69000e+05 -2.36770e+06 9.98877e+06 -2.01080e+07 1.56000e+07
-                            -1.25031e+04 1.13368e+05 -4.24030e+05 7.14000e+05 -3.87792e+05 6.24150934e+18 1e-27'
-    function = 'd*(f0 + A1*ni + A2*ni^2 + A3*ni^3 + A4*ni^4 + A5*ni^5 + B1*cr + B2*cr^2 + B3*cr^3 + B4*cr^4 + B5*cr^5)'
+                         B1 B2 B3 B4 B5
+                         C1 C2 C3 C4
+                         D1 D2 D3 D4
+                         E1 E2 E3 E4
+                         F1 F2 F3 F4
+                         eV_J d'
+    constant_expressions = '-3.48770e+04  2.68988e+05 -2.37323e+06  9.98652e+06 -2.01053e+07 1.55955e+07 -1.27590e+04
+                             1.09468e+05 -4.29605e+05  7.11555e+05 -3.91682e+05 -1.70000e+01 2.98700e+03 -5.10000e+03
+                            -7.76700e+03  1.61410e+04  1.35380e+04  1.17850e+04  1.19660e+04 1.51950e+04  1.41530e+04
+                             8.14600e+03  1.32640e+04  1.30210e+04  1.30300e+04  9.09900e+03 1.25320e+04  6.24150934e+18 1e-27'
+    function = 'd*eV_J*(f0 + A1*ni + A2*ni^2 + A3*ni^3 + A4*ni^4 + A5*ni^5 + B1*cr + B2*cr^2 + B3*cr^3 + B4*cr^4 + B5*cr^5 +  C1*cr*ni + C2*cr^2*ni + C3*cr^3*ni + C4*cr^4*ni + D1*cr*ni^2 + D2*cr^2*ni^2 + D3*cr^3*ni^2 + D4*cr^4*ni^2 + E1*cr*ni^3 + E2*cr^2*ni^3 + E3*cr^3*ni^3 + E4*cr^4*ni^3 + F1*cr*ni^4 + F2*cr^2*ni^4 + F3*cr^3*ni^4 + F4*cr^4*ni^4)'
     derivative_order = 2
   [../]
 []
