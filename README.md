@@ -1,6 +1,9 @@
-Testingmoose
-=====
+# CriticalMoose
 
-"Fork Testingmoose" to create a new MOOSE-based application.
+Simulating Materials in Nuclear Reactors
 
-For more information see: [http://mooseframework.org/create-an-app/](http://mooseframework.org/create-an-app/)
+MSE 395 Spring 2016 Project
+
+See our report [here](https://github.com/quells/TestingMoose/blob/master/Critical%20Moose.pdf).
+
+See our data [here](https://www.dropbox.com/sh/du96b2c3llxdiml/AAC6EMfQUEdmqv2vRJBAlvqLa?dl=0).
